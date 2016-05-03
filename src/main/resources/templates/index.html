@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Home</title>
+        <link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}" href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet" media="screen"/>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="card card-container text-center">
+                <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+                <p class="profile-name-card"></p>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" ><a th:href="@{/login}" class="home-login-href">Login</a></button>
+                <p class="profile-name-card"></p>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" ><a th:href="@{/register}" class="home-login-href">Register</a></button>
+            </div>
+        </div><!-- /container -->
+
+    </body>
+</html>
